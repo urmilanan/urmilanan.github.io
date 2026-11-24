@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urmila Portfolio</title>
+    <link rel = "stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Urmila's Portfolio</div>
+            <div class="right">  </div>
+            <ul>
+                <li><a href = "#home">Home</a></li>
+                <li><a href = "#about">About</a></li>
+                <li><a href = "#skills">Skills</a></li>
+                <li><a href = "#projects">Projects</a></li>
+                <li><a href = "#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection" id = "home">
+            <div class="leftSection">
+                    Hi, My Name is <span class = "accent" > Urmila </span>
+                    <div> and I am a Passionate </div>
+                    <!-- Element to contain animated typing -->
+                    <span id="element"></span>
+                    <div class="buttons">
+                        <a href="Resume.pdf" download class="btn">
+                            Resume
+                        </a>
+                        <a href="https://github.com/urmilanan"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn">
+                            GitHub
+                        </a>
+                        <a href="https://www.linkedin.com/in/urmila-nangaliya-527622297/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn">
+                            LinkedIn
+                        </a>
+                    </div>
+            </div>
+            <div class="rightSection">
+                    <img src="devimage.png" alt="">
+            </div>
+        </section>
+
+        <section class="about" id = "about">
+            <div class="about-img">
+                <img src = "about_img.png" alt="">
+            </div>
+
+            <div class="about-content">
+                <h2 class="heading"> About <span class="accent"> Me </span></h2>
+                <h3 class="text-animation"><span></span></h3>
+                <p>Hi, I'm Urmila, a B.Sc. Computer Science graduate with a
+                     strong interest in web development and software development.</p>
+                     <button class="btn">Read More</button>
+            </div>
+        </section>
+        <section class="skills" id="skills">
+        <h2 class="heading">Skills</h2>
+        <div class="skills-bars">
+            <div class="bar">
+                <div class="info">
+                    <span>HTML</span>
+                </div>
+                <div class="progress-line html">
+                    <span></span>
+                </div>
+            </div>
+
+            <div class="bar">
+                <div class="info">
+                    <span>CSS</span>
+                </div>
+                <div class="progress-line css">
+                    <span></span>
+                </div>
+            </div>
+
+            <div class="bar">
+                <div class="info">
+                    <span>JavaScript</span>
+                </div>
+                <div class="progress-line javascript">
+                    <span></span>
+                </div>
+            </div>
+
+            <div class="bar">
+                <div class="info">
+                    <span>MySQL</span>
+                </div>
+                <div class="progress-line mysql">
+                    <span></span>
+                </div>
+            </div>
+
+            <div class="bar">
+                <div class="info">
+                    <span>Java</span>
+                </div>
+                <div class="progress-line java">
+                    <span></span>
+                </div>
+            </div>
+
+            <div class="bar">
+                <div class="info">
+                    <span>Python</span>
+                </div>
+                <div class="progress-line python">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2 class="heading">Projects</h2>
+        <div class="projects-container">
+            <div class="projects-box">
+                <img src = "tictactoeai.png" alt="">
+                <div class="projects-info">
+                    <h4>Tic Tac Toe</h4>
+                    <p>A fun two-player game where Xs and Os race to get three in a row! 🎮</p>
+                    <a href="#"><i class="box-link"></i></a>
+                </div>            
+            </div>
+
+            <div class="projects-box">
+                <img src = "amazonai.png" alt="">
+                <div class="projects-info">
+                    <h4>Amazon Clone</h4>
+                    <p>An Amazon-inspired shopping webpage with user-friendly design. 🛍️</p>
+                    <a href="#"><i class="box-link"></i></a>
+                </div>            
+            </div>
+
+            <div class="projects-box">
+                <img src = "gloworaai.png" alt="">
+                <div class="projects-info">
+                    <h4>Glowora</h4>
+                    <p>A modern beauty and skincare website with an elegant design. 💜✨</p>
+                    <a href="https://glowora.wordpress.com/"
+                       target="_blank"
+                       rel="noopener noreferrer">Visit Website
+                    
+                    </a>
+                </div>            
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span class="accent">Me</span></h2>
+
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Phone Number">
+                <input type="text" placeholder="Subject">
+            </div>
+
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+
+    
+<footer class="footer">
+    <div class="footer-content">
+        <h3>Urmila's Portfolio</h3>
+        <p>
+            Front-End Developer | Creating clean and user-friendly web experiences.
+        </p>
+        <div class="footer-social">
+            <a href="https://www.linkedin.com/in/urmila-nangaliya-527622297/"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+        </div>
+
+        <div class="footer-nav">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <p class="copyright">
+            © Urmila | All Rights Reserved.
+        </p>
+
+    </div>
+</footer>
+
+    </main>
+     <!-- Load library from the CDN -->
+     <!-- Typed.js library -->
+    <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+
+    <!-- Typed.js animation -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Basic Video Editor'],
+            typeSpeed: 50,
+        });
+    </script>
+
+<!-- Your external JavaScript file -->
+    <script src="scripts.js"></script>
+</body>
+</html>

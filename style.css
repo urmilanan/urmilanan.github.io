@@ -1,0 +1,503 @@
+html {
+    scroll-behavior: smooth;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    scroll-margin-top: 75px;
+}
+
+body {
+    background-color: #0F172A;
+    color: #F8FAFC;
+    font-family: "Space Grotesk", sans-serif;     /* from font */
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 75px;
+    background-color: #302749;
+
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li a {
+    margin: 0 23px;
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: rgb(106, 106, 145);
+    font-size: 1.01rem;
+}
+
+.left {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.firstSection{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    margin: 120px 0;
+}
+
+.firstSection > div {       /* '>' says that the div will work on first of html only which is my name */
+    width: 30%;
+}
+
+.leftSection {
+    font-size: 2rem;
+}
+
+.leftSection .buttons {
+    padding: 20px 0;
+}
+
+.leftSection .btn {
+    padding: 7px;
+    background:#402e59;
+    color: white;
+    border: 1.5px solid white;
+    border-radius: 6px;
+    font-size: 17px;
+    cursor: pointer;
+    text-decoration:none;
+    margin: 4px;
+    text-align: center;
+
+}
+
+.rightSection img {
+    width:100%;
+    border-radius: 30px;
+}
+
+.accent {
+    color: #ab82df;
+}
+
+#element {
+    color: #ab82df;
+}
+
+.about {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+    padding: 100px 6%;
+    box-sizing: border-box;
+    scroll-margin-top: 20px;
+}
+
+.about-img {
+    width: 40%;    
+}
+
+.about-img img {
+    width:100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 30px;
+    display: block;
+    object-position: 20% center;
+}
+
+.about-content {
+    width: 45%;
+}
+
+.about-content h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 1.2rem;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.about .btn {
+    padding: 6px;
+    background:#402e59;
+    color: white;
+    border: 1.5px solid white;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.skills h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+.skills {
+    max-width: 1100px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.skills-bars {
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.skills-bars .bar {
+    margin: 12px 0;
+}
+
+.skills-bars .bar:first-child {
+    margin-top: 0px;
+}
+
+.skills-bars .bar .info {
+    margin-bottom: 5px;
+}
+
+.skills-bars .bar .info span {
+    color: white;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.skills-bars .bar .progress-line {
+    height: 8px;
+    width: 100%;
+    background: white;
+    position: relative;
+    border-radius: 10px;
+}
+
+.bar .progress-line span{
+    height: 100%;
+    position: absolute;
+    border-radius: 10px;
+    background: #0077ff;
+    cursor: pointer;
+}
+
+.bar .progress-line.javascript span {
+    width: 70%;
+    background-color: gold;
+    box-shadow: 0 0 25px gold;
+    transition: 0.3s ease;
+}
+
+.bar .progress-line.javascript span:hover{
+    box-shadow: 0 0 25px gold,
+                0 0 50px gold;
+}
+
+.bar .progress-line.java span {
+    width: 40%;
+    background-color: blue;
+    box-shadow: 0 0 25px blue;
+    transition: 0.3s ease;
+}
+
+.bar .progress-line.java span:hover{
+    box-shadow: 0 0 25px blue,
+                0 0 50px blue;
+}
+
+.bar .progress-line.python span {
+    width: 50%;
+    background-color: greenyellow;
+    box-shadow: 0 0 25px greenyellow;
+    transition: 0.3s ease;
+}
+
+.bar .progress-line.python span:hover{
+    box-shadow: 0 0 25px greenyellow,
+                0 0 50px greenyellow;
+}
+
+.bar .progress-line.html span {
+    width: 90%;
+    background-color: orangered;
+    box-shadow: 0 0 25px orangered;
+    transition: 0.3s ease;
+}
+
+.bar .progress-line.html span:hover{
+    box-shadow: 0 0 25px orangered,
+                0 0 50px orangered;
+}
+
+.bar .progress-line.css span {
+    width: 90%;
+    background-color: blueviolet;
+    box-shadow: 0 0 25px blueviolet;
+    transition: 0.3s ease;
+}
+
+.bar .progress-line.css span:hover{
+    box-shadow: 0 0 25px blueviolet,
+                0 0 50px blueviolet;
+}
+
+.bar .progress-line.mysql span {
+    width: 80%;
+    background-color: darkgreen;
+    box-shadow: 0 0 25px darkgreen;
+    transition: 0.3s ease;
+}
+
+.bar .progress-line.mysql span:hover{
+    box-shadow: 0 0 25px darkgreen,
+                0 0 50px darkgreen;
+}
+
+.projects {
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 130px 30px;
+    box-sizing: border-box;
+    scroll-margin-top: 0;
+    min-height: 100vh;
+}
+
+.projects .heading {
+    text-align: center;
+    align-items: center;
+    font-size: 3rem;
+    margin-bottom: 10rem;
+}
+
+.projects-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);       /* doubt*/
+    align-items: stretch;
+    gap: 4rem;
+}
+
+.projects-container .projects-box {
+    position: relative;
+    min-width: 0;
+    border-radius: 1.5rem;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+     
+}
+
+.projects-box img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: 0.5s ease;
+}
+
+.projects-box:hover img {
+    transform: scale(1.1);
+}
+
+.projects-box .projects-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem;
+    cursor: pointer;
+    transition: 0.5s;
+    gap:0.4rem;
+    opacity: 1;
+    box-sizing: border-box;
+}
+
+.projects-box .projects-info:hover{
+    transform: scale(1.1);
+}
+
+.projects-info h4 {
+    font-size: 1.3rem;
+    color: white;
+    font-weight: 800;
+}
+
+.projects-info p{
+    font-size: 1rem;
+    margin: 0.3rem 0 1rem;
+    font-weight: 600;
+}
+
+.projects-info a {
+    width: auto;
+    height: auto;
+    font-size: 16px;
+    color: white;
+    font-weight: 600;
+}
+
+.projects-info a i {
+    font-size: 3rem;
+}
+
+.contact {
+    width: 100%;
+    min-height: 100vh;
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 55px 30px;
+    box-sizing: border-box;
+    scroll-margin-top:0;
+}
+
+.contact .heading{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.contact form{
+    width:100%;
+    max-width: 60rem;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+
+.contact form .input-box{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.contact form .input-box input,
+.contact form textarea{
+    width: 50%;
+    padding: 0.9rem;
+    font-size: 1rem;
+    border: 1px solid #302749;
+    border-radius: 0.8rem;
+    margin: 0.5rem 0;
+    resize: none;
+    background-color:rgb(30, 27, 27);
+    color:white;
+}
+
+.contact form textarea {
+    height: 12rem;
+    resize: vertical;
+    margin-left: 5px;
+}
+
+.contact form input::placeholder,
+.contact form textarea::placeholder {
+    color: #888;
+}
+
+.contact form .btn {
+    display: block;
+    margin: 15px auto 0;
+    padding: 0.8rem 1.5rem;
+    background: #402e59;
+    color: white;
+    border: none;
+    border-radius: 2rem;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.contact form .btn:hover {
+    background: #ab82df;
+}
+
+
+.footer {
+    width: 100%;
+    background: #302749;
+    padding: 35px 20px 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.footer-content h3 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    color: #F8FAFC;
+}
+
+.footer-content p {
+    color: #cbd5e1;
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+}
+
+.footer-social a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    height: 42px;
+    border: 2px solid #ab82df;
+    border-radius: 50%;
+    color: #ab82df;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.footer-social a:hover {
+    background: #ab82df;
+    color: #0F172A;
+    box-shadow: 0 0 15px #ab82df;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin: 25px 0;
+}
+
+.footer-nav a {
+    color: #F8FAFC;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: 0.3s ease;
+}
+
+.footer-nav a:hover {
+    color: #ab82df;
+}
+
+.footer-content .copyright {
+    margin: 0;
+    padding-top: 15px;
+    border-top: 1px solid #514465;
+    font-size: 0.85rem;
+    color: #cbd5e1;
+}
